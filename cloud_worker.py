@@ -5,7 +5,6 @@ QUERY = "movie clip shorts"
 OUTPUT_DIR = "render_temp"
 ARCHIVE_FILE = "downloaded_archive.txt"
 
-# Ensure output directory exists before download
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def is_downloaded(vid_id):
@@ -47,7 +46,7 @@ if target_id:
         
     if os.path.exists(out_file):
         mark_downloaded(target_id)
-        print("✓ Video successfully downloaded and ready for artifact upload.")
+        print("✓ Video successfully downloaded.")
     else:
         raise FileNotFoundError("Output MP4 file was not generated.")
 else:
