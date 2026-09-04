@@ -5,7 +5,7 @@ OUTPUT_DIR = "render_temp"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 out_file = os.path.join(OUTPUT_DIR, "queue_video.mp4")
 
-# Direct royalty-free sample clip URL
+# Direct video stream URL (bypasses YouTube bot checks)
 VIDEO_URL = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
 
 print("Downloading render payload...")
