@@ -18,9 +18,9 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests yt-dlp
+          pip install requests
 
-      - name: Run worker script
+      - name: Run Worker Script
         run: python cloud_worker.py
 
       - name: Upload Artifact
